@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메뉴주문</title>
+    
+    <link rel="stylesheet" href="/index_style.css" />
+  </head>
+  <body>
+    <nav>
+      <div>HTML실습</div>
+      <div>
+        <ul>
+          <li><a href="/index.html">기본페이지</a></li>
+          <li><a href="/강의시간표.html">강의시간표</a></li>
+          <li><a href="/mp3,4.html">이미지, 오디오, 비디오</a></li>
+          <li><a href="/설문조사.html">설문조사</a></li>
+        </ul>
+      </div>
+    </nav>
+    <h1>설문조사</h1>
+    <form action="">
+    <fieldset>
+      <legend>신원확인</legend>
+        <label>이름</label><input type="text" />
+        <br />
+        <label>학번</label><input type="text" /><br />
+        <label>비밀번호</label><input type="password" />
+        <br />
+        <label>e-mail</label><input type="email" />
+        <br />
+        <label>전화번호</label><input type="tel" /><br/>
+        <label>메모</label><textarea id="memo" cols="50" rows="5"></textarea> 
+      
+    </fieldset>
+    <br />
+    <fieldset>
+      <legend>OTT를 사용하시나요?</legend>
+      <label>네</label><input type="radio" value="1" name="ott" />
+      <label>아니오</label><input type="radio" value="2" name="ott" />
+    </fieldset>
+    <br />
+    <fieldset>
+      <legend>사용하는 OTT는 무엇인가요?</legend>
+      <label>넷플릭스</label><input type="checkbox" /> <label>라프텔</label
+      ><input type="checkbox" /> <label>티빙</label><input type="checkbox" />
+      <label>왓챠</label><input type="checkbox" /> <label>웨이브</label
+      ><input type="checkbox" /> <label>기타</label><input type="checkbox" />
+    </fieldset>
+    <br />
+    <fieldset>
+      <legend>본인이 생각하는 OTT 사용시간 정도</legend>
+      0<input type="range" min="0" max="10" />10
+    </fieldset>
+  </br>
+  <fieldset>
+    <legend>하루 최대 사용시간</legend>
+    <input type="number" min="0" max="24">시간
+  </fieldset>
+  <br>
+<fieldset>
+  <legend>오늘의 날짜</legend>
+  <input type="date">
+
+</fieldset>
+<br>
+<fieldset>
+  <legend>지금 시간</legend>
+  <input type="time">  
+
+</fieldset>
+<br/>
+<fieldset>
+<legend>사진 첨부하기</legend>
+<input type="file">
+</fieldset>
+
+<br>
+<input type="button" value="제출하기">
+</form>
+
+
+  </body>
+</html>
